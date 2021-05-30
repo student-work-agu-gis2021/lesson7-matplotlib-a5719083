@@ -22,6 +22,8 @@ import pandas as pd
 x = np.random.rand(1000)
 y = np.random.rand(1000)
 data = pd.DataFrame()
+data["x"]=x
+data["y"]=y
 # Check your random values
 print(data.head())
 
@@ -33,7 +35,7 @@ assert len(data) == 1000, "There should be 1000 rows of data."
 # 
 
 # YOUR CODE HERE 2 to set colors
-
+colors =np.random.rand(1000)
 # This test print should print out 10 first numbers in the variable colors
 print(colors[0:10])
 
